@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=S, initial-scale=1.0">
-    <title>Shopfy Backend Assessment</title>
+    <title>Shopfy Inventory Items</title>
     <link rel="Stylesheet" href="./styles.css">
 </head>
 <body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for = "productCode">Product Code</label>
+                        <input type="text" name="productCode" id = "productCode">
+                    </div>
+                    <div>
+                        <label for = "Product">Product Name</label>
+                        <input type="text" name="product" id = "product">
+                    </div>
+                    <div>
+                        <label for = "quantity">Quantity</label>
+                        <input type="number" name="quantity" id = "quantity">
+                    </div>
+                    <div>
+                        <label for = "price">Price</label>
+                        <input type="number" name="price" id = "price">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id = "storeList">
+                        <thead>
+                            <tr>
+                                <th>Prodct Code</th>
+                                <th>Prodct Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-    <script src="./index.js"></script>
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
